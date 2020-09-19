@@ -9,7 +9,7 @@ MetaDescription: A quick overview of the Visual Studio Code user interface. Lear
 ---
 # 用户界面
 
-本质上，Visual Studio Code 是代码编辑器。 像许多其他代码编辑器一样，VS Code 在左边采用通用的用户界面和资源管理器布局，以显示您有权访问的所有文件和文件夹，而在右边的编辑器则显示您已打开文件的内容。
+本质上，Visual Studio Code 是代码编辑器。 像许多其他代码编辑器一样，VS Code 在左边采用通用的用户界面和资源管理器布局，以显示有权访问的所有文件和文件夹，而在右边的编辑器则显示已打开文件的内容。
 
 ![code basics hero](https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png)
 
@@ -17,28 +17,28 @@ MetaDescription: A quick overview of the Visual Studio Code user interface. Lear
 
 VS Code具有简单直观的布局，可最大程度地为编辑器提供空间，同时为浏览和访问文件夹或项目的整个上下文留出足够的空间。 用户界面分为五个区域：
 
-* **Editor** - 编辑文件的主要区域。 您可以在垂直和水平方向上并排打开任意多个编辑器。
+* **Editor** - 编辑文件的主要区域。 可以在垂直和水平方向上并排打开任意多个编辑器。
 * **Side Bar** - 包含诸如资源管理器之类的不同视图，可在您处理项目时为您提供帮助。
 * **Status Bar** - 有关打开的项目和您编辑的文件的信息。
 * **Activity Bar** - 它位于最左侧，可让您在视图之间切换，并为您提供特定于上下文的其他指示符，例如启用 Git 时传出更改的数量。
-* **Panels** - 您可以在编辑器区域下方显示不同的面板，以输出或调试信息，错误和警告或集成终端。 面板也可以向右移动以获得更多垂直空间。
+* **Panels** - 可以在编辑器区域下方显示不同的面板，以输出或调试信息，错误和警告或集成终端。 面板也可以向右移动以获得更多垂直空间。
 
-Each time you start VS Code, it opens up in the same state it was in when you last closed it. The folder, layout, and opened files are preserved.
+每次启动 VS Code 时，文件夹、布局和打开的文件将与上次关闭时的状态相同。
 
-Open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the [Tabs](/docs/getstarted/userinterface.md#tabs) section below.
+每个打开的编辑器顶部都有一个卡片式标题（`Tab`），用于显示打开的文件。要了解更多有关卡片式标题的信息，请参见下面的[卡片式标题](/docs/getstarted/userinterface.md＃卡片式标题）(`Tab`)。
 
->**Tip:** You can move the Side Bar to the right hand side (**View** > **Move Side Bar Right**) or toggle its visibility (`kb(workbench.action.toggleSidebarVisibility)`).
+>**提示:** 可以把侧边栏（`Side Bar`）移到右边 (**View** > **Move Side Bar Right**) ，或切换到不可见 (`kb(workbench.action.toggleSidebarVisibility)`)。
 
-## Side by side editing
+## 并排编辑
 
-You can open as many editors as you like side by side vertically and horizontally. If you already have one editor open, there are multiple ways of opening another editor to the side of the existing one:
+可以横向或竖向并排打开多个编辑器网格用来编辑文件。 如果已经打开了个文件, 在另一侧打开其他文件的方法有下面几种。
 
-* `kbstyle(Alt)` click on a file in the Explorer.
-* `kb(workbench.action.splitEditor)` to split the active editor into two.
-* **Open to the Side** (`kb(explorer.openToSide)`) from the Explorer context menu on a file.
-* Click the **Split Editor** button in the upper right of an editor.
-* Drag and drop a file to any side of the editor region.
-* `kbstyle(Ctrl+Enter)` (macOS: `kbstyle(Cmd+Enter)`) in the **Quick Open** (`kb(workbench.action.quickOpen)`) file list.
+* 按住`kbstyle(Alt)` 键，在资源管理视图中点击要打开的文件。
+* `kb(workbench.action.splitEditor)` 命令将正在编辑的文件分裂到两个编辑器中。
+* 在资源管理视图上下文中使用**打开到侧边** 命令(`kb(explorer.openToSide)`) 
+* 在编辑器右上角点击 **Split Editor** 按钮。
+* 从资源管理视图中拖动一个文件到编辑器视图中任意一侧（当鼠标接近边框时会显示区域突显块）。
+* 在**快速打开** (`kb(workbench.action.quickOpen)`) 设置有效时，组合键`kbstyle(Ctrl+Enter)` (macOS: `kbstyle(Cmd+Enter)`) 将快速打开[预显](#预显模式)的文件。
 
 ![Side by Side editing](images/userinterface/sidebyside.png)
 
@@ -50,19 +50,19 @@ When you have more than one editor open you can switch between them quickly by h
 
 >**Tip:** You can resize editors and reorder them. Drag and drop the editor title area to reposition or resize the editor.
 
-## Minimap
+## 迷你导航图
 
-A Minimap (code outline) gives you a high-level overview of your source code, which is useful for quick navigation and code understanding. A file's minimap is shown on the right side of the editor. You can click or drag the shaded area to quickly jump to different sections of your file.
+迷你导航图 (代码大纲) gives you a high-level overview of your source code, which is useful for quick navigation and code understanding. A file's minimap is shown on the right side of the editor. You can click or drag the shaded area to quickly jump to different sections of your file.
 
 ![minimap](images/userinterface/minimap.png)
 
 >**Tip:** You can move the minimap to the left hand side or disable it completely by respectively setting `"editor.minimap.side": "left"` or `"editor.minimap.enabled": false` in your user or workspace [settings](/docs/getstarted/settings.md).
 
-### Indent Guides
+### 缩进参考线
 
 The image above also shows indentation guides (vertical lines) which help you quickly see matching indent levels. If you would like to disable indent guides, you can set `"editor.renderIndentGuides": false` in your user or workspace [settings](/docs/getstarted/settings.md).
 
-## Breadcrumbs
+## 面包屑导航
 
 The editor has a navigation bar above its contents called [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumb_(navigation)). It shows the current location and allows you to quickly navigate between folders, files, and symbols.
 
@@ -70,7 +70,7 @@ The editor has a navigation bar above its contents called [Breadcrumbs](https://
 
 Breadcrumbs always show the file path and if the current file type has language support for symbols, the symbol path up to the cursor position. You can disable breadcrumbs with the **View** > **Show Breadcrumbs** toggle command. For more information about the breadcrumbs feature, such as how to customize their appearance, see the [Breadcrumbs](/docs/editor/editingevolved.md#breadcrumbs) section of the [Code Navigation](/docs/editor/editingevolved.md) article.
 
-## Explorer
+## 资源管理视图
 
 The Explorer is used to browse, open, and manage all of the files and folders in your project. VS Code is file and folder based - you can get started immediately by opening a file or folder in VS Code.
 
@@ -104,7 +104,7 @@ You can select multiple files in the **File Explorer** and **OPEN EDITORS** view
 "workbench.list.multiSelectModifier": "alt"
 ```
 
-### Filtering the document tree
+### 文档树筛选
 
 You can type to filter the currently visible files in the **File Explorer**. With the focus on the **File Explorer** start to type part of the file name you want to match. You will see a filter box in the top-right of the **File Explorer** showing what you have typed so far and matching file names will be highlighted. When you press the cursor keys to move up and down the file list, it will jump between matching files or folders.
 
@@ -112,7 +112,7 @@ Hovering over the filter box and selecting **Enable Filter on Type** will show o
 
 ![Filtering files in the File Explorer](images/userinterface/file-explorer-filter.png)
 
-### Outline view
+### 大纲视图
 
 The Outline view is a separate section in the bottom of the File Explorer. When expanded, it will show the symbol tree of the currently active editor.
 
@@ -131,7 +131,7 @@ There are several Outline view [settings](/docs/getstarted/settings.md) which al
 * `outline.problems.badges` - Toggle using badges for errors and warnings.
 * `outline.problems.colors` - Toggle using colors for errors and warnings.
 
-## Open Editors
+## 打开编辑器
 
 At the top of the Explorer is a view labeled **OPEN EDITORS**. This is a list of active files or previews. These are files you previously opened in VS Code that you were working on. For example, a file will be listed in the **OPEN EDITORS** view if you:
 
@@ -144,7 +144,7 @@ Just click an item in the **OPEN EDITORS** view, and it becomes active in VS Cod
 
 Once you are done with your task, you can remove files individually from the **OPEN EDITORS** view, or you can remove all files by using the **View: Close All Editors** or **View: Close All Editors in Group** actions.
 
-## Views
+## 视图
 
 The File Explorer is just one of the Views available in VS Code. There are also Views for:
 
@@ -162,13 +162,13 @@ You can show or hide views from within the main view and also reorder them by dr
 
 ![view management](images/userinterface/view-management.png)
 
-### Activity Bar
+### 动作边栏
 
 The **Activity Bar** on the left lets you quickly switch between Views. You can also reorder Views by dragging and dropping them on the **Activity Bar** or remove a View entirely (right click **Hide from Activity Bar**).
 
 ![activity bar context menu](images/userinterface/activity-bar-context-menu.png)
 
-## Command Palette
+## 命令面板
 
 VS Code is equally accessible from the keyboard. The most important key combination to know is `kb(workbench.action.showCommands)`, which brings up the **Command Palette**. From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
 
@@ -186,15 +186,15 @@ Type `?` into the input field to get a list of available commands you can execut
 
 ![Quick Open Help](images/userinterface/quickopenhelp.png)
 
-## Configuring the editor
+## 配置编辑器
 
 VS Code gives you many options to configure the editor. From the **View** menu, you can hide or toggle various parts of the user interface, such as the **Side Bar**, **Status Bar**, and **Activity Bar**.
 
-### Hide the Menu Bar (Windows, Linux)
+### 隐藏菜单栏 (Windows, Linux)
 
 You can hide the Menu Bar on Windows and Linux with the **View** > **Toggle Menu Bar** command. You can still access the Menu Bar by pressing the `kbstyle(Alt)` key (`window.menuBarVisibility` setting).
 
-### Settings
+### 设置
 
 Most editor configurations are kept in settings which can be modified directly. You can set options globally through user settings or per project/folder through workspace settings. Settings values are kept in a `settings.json` [file](/docs/getstarted/settings.md#settings-file-locations).
 
@@ -211,7 +211,7 @@ After editing your settings, type `kb(workbench.action.files.save)` to save your
 
 >**Note:** Workspace settings will override User settings and are useful for sharing project specific settings across a team.
 
-### Zen Mode
+### 静默模式
 
 Zen Mode lets you focus on your code by hiding all UI except the editor (no Activity Bar, Status Bar, Side Bar and Panel), going to full screen and centering the editor layout. Zen mode can be toggled using **View** menu, **Command Palette** or by the shortcut `kb(workbench.action.toggleZenMode)`. Double `kbstyle(Esc)` exits Zen Mode. The transition to full screen can be disabled via `zenMode.fullScreen`. Zen Mode can be further tuned by the following settings: `zenMode.hideStatusBar`, `zenMode.hideTabs`, `zenMode.fullScreen`, `zenMode.restore`, and `zenMode.centerLayout`.
 
@@ -219,7 +219,7 @@ Zen Mode lets you focus on your code by hiding all UI except the editor (no Acti
 
 Centered editor layout allows you to center align the editor area. This is particularly useful when working with a single editor on a large monitor. You can use the sashes on the side to resize the view (hold down the `Alt` key to independently move the sashes).
 
-## Tabs
+## 卡片式标题
 
 Visual Studio Code shows open items with Tabs (tabbed headings) in the title area above the editor.
 
@@ -239,7 +239,7 @@ If you don't want to use Tabs, you can disable the feature by setting the `workb
 
 See the section below to optimize VS Code when [working without Tabs](/docs/getstarted/userinterface.md#working-without-tabs).
 
-### Tab ordering
+### 卡片式标题排序
 
 By default, new Tabs are added to the right of the existing Tabs but you can control where you'd like new Tabs to appear with the `workbench.editor.openPositioning` setting.
 
@@ -249,7 +249,7 @@ For example, you might like new tabbed items to appear on the left:
     "workbench.editor.openPositioning": "left"
 ```
 
-## Preview mode
+## 预显模式
 
 When you single-click or select a file in the Explorer, it is shown in a preview mode and reuses an existing Tab. This is useful if you are quickly browsing files and don't want every visited file to have its own Tab. When you start editing the file or use double-click to open the file from the Explorer, a new Tab is dedicated to that file.
 
@@ -262,7 +262,7 @@ If you'd prefer to not use preview mode and always create a new Tab, you can con
 * `workbench.editor.enablePreview` to globally enable or disable preview editors
 * `workbench.editor.enablePreviewFromQuickOpen` to enable or disable preview editors when opened from **Quick Open**
 
-## Editor Groups
+## 编辑器组
 
 When you split an editor (using the **Split Editor** or **Open to the Side** commands), a new editor region is created which can hold a group of items. You can open as many editor regions as you like side by side vertically and horizontally.
 
@@ -274,7 +274,7 @@ You can Drag and Drop editor groups on the workbench, move individual Tabs betwe
 
 >**Note:** VS Code uses editor groups whether or not you have enabled Tabs.  Without Tabs, editor groups are a stack of your open items with the most recently selected item visible in the editor pane.
 
-## Grid editor layout
+## 网格编辑器布局
 
 By default, editor groups are laid out in vertical columns (for example when you split an editor to open it to the side). You can easily arrange editor groups in any layout you like, both vertically and horizontally:
 
@@ -298,7 +298,7 @@ There are many keyboard commands for adjusting the editor layout with the keyboa
 
 ![Grid Alt Click](images/userinterface/grid-alt.gif)
 
-### Keyboard shortcuts
+### 键盘快捷键
 
 Here are some handy keyboard shortcuts to quickly navigate between editors and editor groups.
 
@@ -314,15 +314,15 @@ Here are some handy keyboard shortcuts to quickly navigate between editors and e
 * `kb(workbench.action.closeEditorsInGroup)` close all editors in the editor group.
 * `kb(workbench.action.closeAllEditors)` close all editors.
 
-## Working without Tabs
+## 在没有卡片式标题的情况下工作
 
 If you prefer not to use Tabs (tabbed headings), you can disable Tabs (tabbed headings) entirely by setting `workbench.editor.showTabs` to false.
 
-### Disable Preview mode
+### 让预显模式失效
 
 Without Tabs, the **OPEN EDITORS** section of the File Explorer is a quick way to do file navigation.  With [preview editor mode](/docs/getstarted/userinterface.md#preview-mode), files are not added to the **OPEN EDITOR** list nor editor group on single-click open. You can disable this feature through the `workbench.editor.enablePreview` and `workbench.editor.enablePreviewFromQuickOpen` settings.
 
-### Ctrl+Tab to navigate in entire editor history
+### 用 “Ctrl+Tab” 在已打开的编辑器之间导航
 
 You can change keybindings for `kbstyle(Ctrl+Tab)` to show you a list of all opened editors from the history independent from the active editor group.
 
@@ -333,7 +333,7 @@ Edit your [keybindings](/docs/getstarted/keybindings.md) and add the following:
 { "key": "ctrl+tab", "command": "workbench.action.quickOpenNavigateNext", "when": "inQuickOpen" },
 ```
 
-### Close an entire group instead of a single editor
+### 用关闭一个编辑器来关闭整个组
 
 If you liked the behavior of VS Code closing an entire group when closing one editor, you can bind the following in your [keybindings](/docs/getstarted/keybindings.md).
 
@@ -349,7 +349,7 @@ Windows/Linux:
 { "key": "ctrl+w", "command": "workbench.action.closeEditorsInGroup" }
 ```
 
-## Window management
+## 窗口管理
 
 VS Code has some options to control how windows (instances) should be opened or restored between sessions.
 
@@ -361,15 +361,17 @@ Note: There can still be cases where this setting is ignored (for example, when 
 
 The `window.restoreWindows` setting tells VS Code how to restore the opened windows of your previous session. By default, VS Code will restore all windows you worked on during your previous session (setting: `all`). Change this setting to `none` to never reopen any windows and always start with an empty VS Code instance. Change it to `one` to reopen the last opened window you worked on or `folders` to only restore windows that had folders opened.
 
-## Next steps
+## 下一个目标
+
+了解了 VS Code 的总体布局，就可以通过下一章节的内容根据自己的喜好定制编辑器了。
 
 Now that you know the overall layout of VS Code, start to customize the editor to how you like to work by looking at the following topics:
 
-* [Changing the Theme](/docs/getstarted/themes.md) - Set a Color and/or File Icon theme to your preference.
+* [改变主题](/docs/getstarted/themes.md) - Set a Color and/or File Icon theme to your preference.
 
-## Common questions
+## 常见问题
 
-### How can I change the color of the indent guides?
+### 如何改变缩进参考线的颜色?
 
 The indent guide colors are customizable as are most VS Code UI elements. To [customize](/docs/getstarted/theme-color-reference.md) the indent guides color for your active color theme, use the `workbench.colorCustomizations` [setting](/docs/getstarted/settings.md) and modify the `editorIndentGuide.background` value.
 
