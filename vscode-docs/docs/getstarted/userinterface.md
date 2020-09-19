@@ -7,21 +7,21 @@ PageTitle: Visual Studio Code User Interface
 DateApproved: 9/10/2020
 MetaDescription: A quick overview of the Visual Studio Code user interface. Learn about the editor, window management, and special UI to handle source control, extension management, full text search and more.
 ---
-# User Interface
+# 用户界面
 
-At its heart, Visual Studio Code is a code editor. Like many other code editors, VS Code adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you have access to, and an editor on the right, showing the content of the files you have opened.
+本质上，Visual Studio Code 是代码编辑器。 像许多其他代码编辑器一样，VS Code 在左边采用通用的用户界面和资源管理器布局，以显示您有权访问的所有文件和文件夹，而在右边的编辑器则显示您已打开文件的内容。
 
-![code basics hero](images/userinterface/hero.png)
+![code basics hero](https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png)
 
-## Basic Layout
+## 基本布局
 
-VS Code comes with a simple and intuitive layout that maximizes the space provided for the editor while leaving ample room to browse and access the full context of your folder or project. The UI is divided into five areas:
+VS Code具有简单直观的布局，可最大程度地为编辑器提供空间，同时为浏览和访问文件夹或项目的整个上下文留出足够的空间。 用户界面分为五个区域：
 
-* **Editor** - The main area to edit your files. You can open as many editors as you like side by side vertically and horizontally.
-* **Side Bar** - Contains different views like the Explorer to assist you while working on your project.
-* **Status Bar** - Information about the opened project and the files you edit.
-* **Activity Bar** -  Located on the far left-hand side, this lets you switch between views and gives you additional context-specific indicators, like the number of outgoing changes when Git is enabled.
-* **Panels** - You can display different panels below the editor region for output or debug information, errors and warnings, or an integrated terminal. Panel can also be moved to the right for more vertical space.
+* **Editor** - 编辑文件的主要区域。 您可以在垂直和水平方向上并排打开任意多个编辑器。
+* **Side Bar** - 包含诸如资源管理器之类的不同视图，可在您处理项目时为您提供帮助。
+* **Status Bar** - 有关打开的项目和您编辑的文件的信息。
+* **Activity Bar** - 它位于最左侧，可让您在视图之间切换，并为您提供特定于上下文的其他指示符，例如启用 Git 时传出更改的数量。
+* **Panels** - 您可以在编辑器区域下方显示不同的面板，以输出或调试信息，错误和警告或集成终端。 面板也可以向右移动以获得更多垂直空间。
 
 Each time you start VS Code, it opens up in the same state it was in when you last closed it. The folder, layout, and opened files are preserved.
 
