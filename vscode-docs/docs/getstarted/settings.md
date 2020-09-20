@@ -7,22 +7,22 @@ PageTitle: Visual Studio Code User and Workspace Settings
 DateApproved: 9/10/2020
 MetaDescription: How to modify Visual Studio Code User and Workspace Settings.
 ---
-# User and Workspace Settings
+# **用户设置**与**工作空间设置**
 
-It is easy to configure Visual Studio Code to your liking through its various settings. Nearly every part of VS Code's editor, user interface, and functional behavior has options you can modify.
+很容易通过对用户（user）及工作空间(workspace)的各种设定来配置 Visual Studio Code 以符合自己的偏好。几乎 VS Code 的编辑器的每个部件，用户界面及行为功能所拥有的选项都能被修改。
 
-![VS Code settings](images/settings/hero.png)
+[VS Code'sVS Code settings](images/settings/hero.png)
 
 VS Code provides two different scopes for settings:
 
-* **User Settings** - Settings that apply globally to any instance of VS Code you open.
-* **Workspace Settings** - Settings stored inside your workspace and only apply when the workspace is opened.
+* **用户设定** - Settings that apply globally to any instance of VS Code you open.
+* **工作空间设定** - Settings stored inside your workspace and only apply when the workspace is opened.
 
 Workspace settings override user settings. Workspace settings are specific to a project and can be shared across developers on a project.
 
->**Note**: A VS Code "workspace" is usually just your project root folder. Workspace settings as well as [debugging](/docs/editor/debugging.md) and [task](/docs/editor/tasks.md) configurations are stored at the root in a `.vscode` folder. You can also have more than one root folder in a VS Code workspace through a feature called [Multi-root workspaces](/docs/editor/multi-root-workspaces.md).
+>**Note**: A VS Code "workspace" is usually just your project root folder. Workspace settings as wel。l as [debugging](/docs/editor/debugging.md) and [task](/docs/editor/tasks.md) configurations are stored at the root in a `.vscode` folder. You can also have more than one root folder in a VS Code workspace through a feature called [Multi-root workspaces](/docs/editor/multi-root-workspaces.md).
 
-## Creating User and Workspace Settings
+## 创建用户及工作空间设定
 
 To open your user and workspace settings, use the following VS Code menu command:
 
@@ -39,7 +39,7 @@ Changes to settings are reloaded by VS Code as you change them. Modified setting
 
 >**Note:** Workspace settings are useful for sharing project specific settings across a team.
 
-## Settings editor
+## 设定编辑器
 
 When you open the settings editor, you can search and discover settings you are looking for. When you search using the Search bar, it will not only show and highlight the settings matching your criteria, but also filter out those which are not matching. This makes finding settings quick and easy.
 
@@ -47,13 +47,13 @@ When you open the settings editor, you can search and discover settings you are 
 
 **Note**: VS Code extensions can also add their own custom settings and they will be visible under an **Extensions** section.
 
-### Edit settings
+### 编辑设定
 
 Each setting can be edited by either a **checkbox**, an **input** or by a **drop-down**. Edit the text or select the option you want to change to the desired settings.
 
 ![Edit a Setting](images/settings/settings-edit.png)
 
-### Settings groups
+### 设定组
 
 Default settings are represented in groups so that you can navigate them easily. It has a **Commonly Used** group at the top, which shows popular customizations.
 
@@ -61,7 +61,7 @@ Default settings are represented in groups so that you can navigate them easily.
 
 Below is a [copy of the default settings](/docs/getstarted/settings.md#default-settings) that come with VS Code.
 
-## Settings file locations
+## **设定文件（settings.jsonq）**的位置
 
 By default VS Code shows the Settings editor, but you can still edit the underlying `settings.json` file by using the **Open Settings (JSON)** command or by changing your default settings editor with the `workbench.settings.editor` setting.
 
@@ -121,9 +121,9 @@ Here is the list of settings not supported in workspace settings:
 
 The first time you open a workspace that defines any of these settings, VS Code will warn you and subsequently always ignore the values after that.
 
-## Default settings
+## 默认设定
 
-Below are the Visual Studio Code default settings and their values. You can also view the default values in the Settings editor.
+以下是 Visual Studio Code 的默认设定及其值。You can also view the default values in the Settings editor.
 
 ```json
 {
