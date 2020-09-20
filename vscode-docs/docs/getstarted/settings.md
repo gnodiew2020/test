@@ -7,7 +7,7 @@ PageTitle: Visual Studio Code User and Workspace Settings
 DateApproved: 9/10/2020
 MetaDescription: How to modify Visual Studio Code User and Workspace Settings.
 ---
-# **用户设置**与**工作空间设置**
+# 用户设置与工作空间设置
 
 很容易通过对用户（user）及工作空间(workspace)的各种设定来配置 Visual Studio Code 以符合自己的偏好。几乎 VS Code 的编辑器的每个部件，用户界面及行为功能所拥有的选项都能被修改。
 
@@ -123,7 +123,7 @@ The first time you open a workspace that defines any of these settings, VS Code 
 
 ## 默认设定
 
-以下是 Visual Studio Code 的默认设定及其值。You can also view the default values in the Settings editor.
+以下是 Visual Studio Code 的默认设定及其值。您也可以在“设置”编辑器中查看默认值。
 
 ```json
 {
