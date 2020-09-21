@@ -11,27 +11,22 @@
 
 .. contents::
 
-reStructuredText is an easy-to-read, what-you-see-is-what-you-get
-plaintext markup syntax and parser system.  It is useful for in-line
-program documentation (such as Python docstrings), for quickly
-creating simple web pages, and for standalone documents.
-reStructuredText is designed for extensibility for specific
-application domains.  The reStructuredText parser is a component of
-Docutils_.  reStructuredText is a revision and reinterpretation of the
-StructuredText_ and Setext_ lightweight markup systems.
+reStructuredText 是一个易于阅读、 所见即所得的纯文本标记语法解释系统。
+对于把内联程序文档快速创建成简单的网页和独立文档非常有用（比如：Python docstrings），
 
-The primary goal of reStructuredText is to define and implement a
-markup syntax for use in Python docstrings and other documentation
-domains, that is readable and simple, yet powerful enough for
-non-trivial use.  The intended purpose of the markup is the conversion
-of reStructuredText documents into useful structured data formats.
+reStructuredText 用于设计特定应用程序域的可扩展性。
+其解释器是 Docutils_ 的一个组件。
 
-See statemachine.py_ for an example of a Python module fully
-documented using reStructuredText.
+reStructuredText 是对轻量级标记系统 StructuredText_ 与 Setext_ 的修订与重新注解。
+
+reStructuredText 的最初目的是为 Python Docstrings 及其它文档域定义实现并实现一套标记语法。
+使其简单易读且超强通用。标记的预期目的是将 reStructuredText 文档转换为有用的结构化数据格式。
+
+完整了解Python模块的示例，使用reStructuredText记录请看 statemachine.py_
 
 
-User Documentation
-==================
+用户文档
+========
 
 - `A ReStructuredText Primer`__ (HTML file, or `text source`__).
 - `Quick reStructuredText`__ (user reference)
