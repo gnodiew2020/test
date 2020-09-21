@@ -14,7 +14,7 @@
 reStructuredText 是一个易于阅读、 所见即所得的纯文本标记语法解释系统。
 对于把内联程序文档快速创建成简单的网页和独立文档非常有用（比如：Python docstrings），
 
-reStructuredText 用于设计特定应用程序域的可扩展性。
+reStructuredText 用于设计特定应用程序域的可扩展性，
 其解释器是 Docutils_ 的一个组件。
 
 reStructuredText 是对轻量级标记系统 StructuredText_ 与 Setext_ 的修订与重新注解。
@@ -44,8 +44,8 @@ __ docs/user/rst/cheatsheet.txt
 .. _Docutils-users: docs/user/mailing-lists.html#docutils-users
 
 
-Reference Documentation
-=======================
+文档参考
+============
 
 - `An Introduction to reStructuredText`__ (includes the Goals__ and
   History__ of reStructuredText)
@@ -60,9 +60,8 @@ __ docs/ref/rst/restructuredtext.html
 __ docs/ref/rst/directives.html
 __ docs/ref/rst/roles.html
 
-
-Developer Documentation
-=======================
+开发者文档
+===========
 
 - `A Record of reStructuredText Syntax Alternatives`__
 - `Problems With StructuredText`__
@@ -71,7 +70,7 @@ __ docs/dev/rst/alternatives.html
 __ docs/dev/rst/problems.html
 
 
-How-To's
+如何做
 --------
 
 - `Creating reStructuredText Directives`__
@@ -81,7 +80,7 @@ __ docs/howto/rst-directives.html
 __ docs/howto/rst-roles.html
 
 
-Try it Online
+试试在线
 =============
 
 If you want to try reStructuredText out without downloading Docutils, you
@@ -89,8 +88,8 @@ can play with the "simple online editor for reStructuredText" on
 http://rst.ninjs.org/
 
 
-Testimonials
-============
+感言
+======
 
 The following testimonials are excerpts from unsolicited posts to
 mailing lists and the comp.lang.python newsgroup.  Being excerpts,
