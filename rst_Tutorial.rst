@@ -232,7 +232,7 @@ is left as an exercise for the reader.
 .. _Setext: mirror/setext.html
 .. _statemachine.py: docutils/statemachine.py
 
-.. |reStructuredText| image:: https://docutils.sourceforge.io/rst.png
+.. |reStructuredText| image:: rst.png
 
 
 ..
