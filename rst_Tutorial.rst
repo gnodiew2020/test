@@ -2,12 +2,12 @@
  |reStructuredText|
 ====================
 -------------------------------------------------
- Markup Syntax and Parser Component of Docutils_
+ Docutils_ 标记语法及解释器
 -------------------------------------------------
 
 :Date: $Date: 2016-05-24 13:48:37 +0200 (Di, 24. Mai 2016) $
 
-.. Note:: "reStructuredText" is **ONE** word, *not two!*
+.. Note:: "reStructuredText" 是 **一个** 单词, 不是 *两个*
 
 .. contents::
 
@@ -232,7 +232,7 @@ is left as an exercise for the reader.
 .. _Setext: mirror/setext.html
 .. _statemachine.py: docutils/statemachine.py
 
-.. |reStructuredText| image:: rst.png
+.. |reStructuredText| image:: https://docutils.sourceforge.io/rst.png
 
 
 ..
