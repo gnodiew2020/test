@@ -22,20 +22,19 @@ reStructuredText 是对轻量级标记系统 StructuredText_ 与 Setext_ 的修�
 reStructuredText 的最初目的是为 Python Docstrings 及其它文档域定义并实现一套标记语法。
 使其简单易读且超强通用。标记的预期目的是将 reStructuredText 文档转换为有用的结构化数据格式。
 
-完整了解Python模块的示例，使用reStructuredText记录请看 statemachine.py_
+完整了解 Python 模块的示例，使用 reStructuredText 记录请看 statemachine.py_
 
 
 用户文档
 ========
 
-- `A ReStructuredText Primer`__ (HTML file, or `text source`__).
-- `Quick reStructuredText`__ (user reference)
-- `reStructuredText Cheat Sheet`__ (text only; 1 page for syntax, 1
+- `ReStructuredText 入门`__ (HTML file, or `text source`__).
+- `快速 reStructuredText`__ (user reference)
+- `reStructuredText 备忘录`__ (text only; 1 page for syntax, 1
   page directive & role reference)
 
-Users who have questions or need assistance with Docutils or
-reStructuredText should post a message to the Docutils-users_ mailing
-list.
+对 Docutils 或 reStructuredText 有疑问或需要帮助的用户
+请在 Docutils-users_ 邮件列表中发送一条消息。
 
 __ docs/user/rst/quickstart.html
 __ docs/user/rst/quickstart.txt
