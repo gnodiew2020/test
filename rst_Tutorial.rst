@@ -19,7 +19,7 @@ reStructuredText 用于设计特定应用程序域的可扩展性，
 
 reStructuredText 是对轻量级标记系统 StructuredText_ 与 Setext_ 的修订与重新注解。
 
-reStructuredText 的最初目的是为 Python Docstrings 及其它文档域定义实现并实现一套标记语法。
+reStructuredText 的最初目的是为 Python Docstrings 及其它文档域定义并实现一套标记语法。
 使其简单易读且超强通用。标记的预期目的是将 reStructuredText 文档转换为有用的结构化数据格式。
 
 完整了解Python模块的示例，使用reStructuredText记录请看 statemachine.py_
